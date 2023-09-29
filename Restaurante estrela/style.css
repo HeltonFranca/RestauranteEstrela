@@ -1,0 +1,176 @@
+.fundo{
+    background-image: linear-gradient(90deg, #ffffff, #008cff, #008cff,#ffffff);
+    border: solid;
+    border-color: #9dd3ff;
+    
+   
+}
+.img{
+
+    max-width: 50px;
+    max-height: 50px;
+
+}
+body{
+    background-color: #02001f;
+}
+
+.imgCarrossel {
+    width: 512px;
+    height: 512px;
+    border: solid;
+    border-radius: 10px;
+    border-color: #ffffff44;
+
+
+}
+
+
+.carousel-item.active {
+align-content: center;
+justify-content: center;
+display: flex;
+}
+
+.titulo, .descricao{
+
+    color: white; 
+    text-shadow: -1px -1px 0 rgb(177, 177, 177), 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; 
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.descricao{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cabecalio{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: fa;
+}
+
+.prato{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.precoPrato{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.pratoDescricao{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.botaoAdicionar {
+    background-color: #fff;
+    color: #3498db;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ 
+}
+
+.botaoRemover {
+    background-color: #ffffff00;
+    color: #db6334;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 100px;
+ 
+}
+
+.item{
+    width: 512px;
+    height: 512px;
+    border: solid;
+    border-radius: 10px;
+    border-color: #ffffff44;
+}
+.carrinho {
+        max-width: 50px;
+        max-height: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 50px;
+ }
+.card-body{
+
+
+    background-image: linear-gradient(90deg, #ffffff, #008cff, #008cff,#ffffff);
+    padding: 20px; 
+    border-radius: 10px; 
+    color: rgb(0, 0, 0);
+}
+
+.notificacao {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    border-radius: 8px; 
+    word-wrap: break-word; 
+}
+
+.notificacaoErro {
+    background-color: #f70000;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    border-radius: 8px; 
+    word-wrap: break-word; 
+}
+.icon{
+
+    border: solid;
+    border-radius: 100px;
+    border-color: #234561;
+}
+
+.total{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo_sinopse{
+    color: white; 
+    text-shadow: -1px -1px 0 rgb(177, 177, 177), 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+
+
+}
+.texto{
+    color: white; 
+    text-shadow: -1px -1px 0 rgb(177, 177, 177)
+}

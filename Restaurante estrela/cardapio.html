@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio do Restaurante</title>
+    <script src="menu.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fundo">
+        <img src="estrela.png" class="img">
+        <a href="carrinho.html">
+            <img src="icone/carrinho.png" alt="Ícone de carrinho" class="carrinho" onclick="exibirCarrinho()">
+
+        </a>
+        <div class="container">
+          <a class="navbar-brand restauranteNome" >Restaurante Estrela</a>
+          <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cardapio.html">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobreNOS.html">Sobre Nós</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+
+              </form>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <h1 class="cabecalio">Cardápio do Estrela</h1>
+    <br>
+    <br>
+    <div id="notificacao" class="notificacao"></div>
+    <div class="descricao">
+        <h2 class="prato">Sopa do Chef</h2>
+        <p class="pratoDescricao">Uma sopa de legumes frescos e ervas aromáticas, servida com pão artesanal.</p>
+    <center>
+        <img src="cardapio/sopa.jpg" class="item">
+    </center>
+        <p class="precoPrato">Preço: R$ 10,00</p>
+    <center>
+        <button onclick="adicionarItem('Sopa do Chef', 10)" class="botaoAdicionar" >Adicionar ao Carrinho</button>
+    </center>
+    </div>
+    <br>
+    <br>
+    
+    <div class="descricao">
+        <h2 class="prato">Bruschetta de Tomate</h2>
+        <p class="pratoDescricao">Fatias de pão crocante, tomate maduro, manjericão e azeite de oliva.</p>
+    <center>
+        <img src="cardapio/tomate.jpg" class="item">
+    </center>
+        <p class="precoPrato">Preço: R$ 12,00</p>
+    <center>
+        <button onclick="adicionarItem('Bruschetta de Tomate', 12)" class="botaoAdicionar">Adicionar ao Carrinho</button>
+    </center>
+    </div>
+    <br>
+    <br>
+    
+    <div class="descricao">
+        <h2 class="prato">Rolinhos Primavera</h2>
+        <p class="pratoDescricao">Rolinhos de massa recheados com vegetais frescos, servidos com molho de gergelim.</p>
+    <center>
+        <img src="cardapio/rolinho_primavrea.jpg" class="item">
+    </center>
+        <p class="precoPrato">Preço: R$ 15,00</p>
+    <center>
+        <button onclick="adicionarItem('Rolinhos Primavera', 15)" class="botaoAdicionar">Adicionar ao Carrinho</button>
+    </center>
+    </div>
+    <br>
+    <br>
+    
+    <div class="descricao">
+        <h2 class="prato">Filé Mignon Grelhado</h2>
+        <p class="pratoDescricao">Filé mignon suculento grelhado no ponto desejado, acompanhado de batatas rústicas e legumes da estação.</p>
+    <center>
+        <img src="cardapio/filéGrelhado.jpg" class="item">
+    </center>
+        <p class="precoPrato">Preço: R$ 25,00</p>
+    <center>
+        <button onclick="adicionarItem('Filé Mignon Grelhado', 25)" class="botaoAdicionar">Adicionar ao Carrinho</button>
+    </center>
+    </div>
+    <br>
+    <br>
+    <div class="descricao">
+        <h2 class="prato">Frango ao Curry</h2>
+        <p class="pratoDescricao">Peito de frango em um molho de curry cremoso, servido com arroz basmati e naan.</p>
+    <center>
+        <img src="cardapio/curry.jpg"class="item">
+    </center>
+        <p class="precoPrato">Preço: R$ 18,00</p>
+    <center>
+        <button onclick="adicionarItem('Frango ao Curry', 18)" class="botaoAdicionar">Adicionar ao Carrinho</button>
+    </center>
+    </div>
+    <br>
+    <br>    
+    <div class="descricao">
+        <h2 class="prato">Massa Carbonara</h2>
+        <p class="pratoDescricao">Espaguete al dente com molho à base de ovos, queijo parmesão, pancetta e pimenta preta.</p>
+    <center>
+        <img src="cardapio/carbonara.jpg" class="item">
+    </center>
+        <p class="precoPrato">Preço: R$ 16,00</p>
+    <center>
+        <button onclick="adicionarItem('Massa Carbonara', 16)" class="botaoAdicionar">Adicionar ao Carrinho</button>
+    </center>
+    </div>
+    <br>
+    <br>
+    
+    <div class="descricao">
+        <h2 class="prato">Lasanha de Berinjela</h2>
+        <p class="pratoDescricao">Camadas de berinjela grelhada, queijo ricota e molho de tomate, gratinadas com queijo.</p>
+    <center>
+        <img src="cardapio/lasanha.png" class="item">
+    </center>
+        <p class="precoPrato">Preço: R$ 14,00</p>
+    <center>
+        <button onclick="adicionarItem('Lasanha de Berinjela', 14)" class="botaoAdicionar">Adicionar ao Carrinho</button>
+    </center>
+    </div>
+    <br>
+    <br>    
+    <div class="descricao">
+        <h2 class="prato">Hambúrguer de Grão de Bico</h2>
+        <p class="pratoDescricao">Um hambúrguer vegetariano saboroso, servido com batatas fritas e salada.</p>
+    <center>
+        <img src="cardapio/hamburgui.jpg" class="item">
+    </center>
+        <p class="precoPrato">Preço: R$ 13,00</p>
+    <center>
+        <button onclick="adicionarItem('Hambúrguer de Grão de Bico', 13)" class="botaoAdicionar">Adicionar ao Carrinho</button>
+    </center>
+    </div>
+    <br>
+    <br>
+    
+    <div class="descricao">
+        <h2 class="prato">Torta de Chocolate</h2>
+        <p class="pratoDescricao">Uma fatia de torta de chocolate decadente, acompanhada de sorvete de baunilha.</p>
+    <center>
+        <img src="cardapio/torta-de-chocolate.jpg" class="item">
+    </center>
+        <p class="precoPrato">Preço: R$ 8,00</p>
+    <center>
+        <button onclick="adicionarItem('Torta de Chocolate', 8)" class="botaoAdicionar">Adicionar ao Carrinho</button>
+    </center>
+    </div>
+    <br>
+    <br>
+    
+    <div class="descricao">
+        <h2 class="prato">Pudim de Caramelo</h2>
+        <p class="pratoDescricao">Pudim de caramelo suave e doce, coberto com calda de caramelo.</p>
+    <center>
+        <img src="cardapio/pudim-de-clara-1024x576.jpg" class="item">
+    </center>
+        <p class="precoPrato">Preço: R$ 7,00</p>
+        <br>
+        <br>
+    <center>
+        <button onclick="adicionarItem('Pudim de Caramelo', 7)" class="botaoAdicionar">Adicionar ao Carrinho</button>
+    </center>
+    </div>
+    <br>
+    <br>
+    
+    <div class="descricao">
+        <h2 class="prato">Sorvete Artesanal</h2>
+        <p class="pratoDescricao">Seleção de sabores de sorvete artesanal, com coberturas e caldas à escolha.</p>
+    <center>
+        <img src="cardapio/sorvete.jpg" class="item">
+    </center>
+        <p class="precoPrato">Preço: R$ 9,00</p>
+    <center>
+        <button onclick="adicionarItem('Sorvete Artesanal', 9)" class="botaoAdicionar">Adicionar ao Carrinho</button>
+    </center>
+    </div>
+    <center>
+    <h2 class = 'descricao'>Bebidas:</h2>
+        <div class="descricao">
+            <button onclick="mostrarBebidasAlcoolicas('bebidasAlcoolicas')">Ver Bebidas Alcoólicas</button>
+            <button onclick="mostrarBebidasNaoAlcoolicas('bebidasNaoAlcoolicas')">Ver Bebidas Não Alcoólicas</button>
+        </div>
+        <div class="descricao" id="bebidasAlcoolicas" style="display: none;">
+            <h2>Bebidas Alcoólicas</h2>
+            <ul id="listaBebidasAlcoolicas">
+                
+            </ul>
+        </div>
+        <div class="descricao" id="bebidasNaoAlcoolicas" style="display: none;">
+            <h2>Bebidas Não Alcoólicas</h2>
+            <ul id="listaBebidasNaoAlcoolicas">
+            </center>
+            </ul>
+        </div>
+        
+<div style="display: none;">
+    <h2 class="descricao">Carrinho de Compras</h2>
+    <ul id="carrinho"></ul>
+</div>
+</body>
+</html>
